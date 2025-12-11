@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+
+#window{
+    height: 95%;
+    width: 100%;
+    
+}
+
+#window img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;    
+}
+
+#taskbar{
+    height: 5%;
+    width: 100%;
+    background-color: #D8DDED;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 10px; */
+    padding-left: 45%;
+
+    
+}
+#center{
+    height: 100%;
+    width: 180px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#center .icon{
+    height: 80%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0.9;
+}
+.icon:hover{
+    background-color: #B0C4DE;
+    cursor: pointer;
+}
+#center .icon img{
+    height: 100%;
+    width: 10%;
+    width: auto;
+    object-fit: contain;
+}
+
+
+
+#right{
+  
+    height: 100%;
+    width: 190px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 10px;
+    scale: 0.8;
+}
+
+#right .date{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
