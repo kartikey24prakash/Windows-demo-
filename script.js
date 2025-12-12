@@ -1,6 +1,6 @@
 var button = document.querySelector("#one");
 var menu = document.querySelector("#menu");
-var window = document.querySelector("#window");
+var win = document.querySelector("#maintouch");
 var rightclick = document.querySelector("#rightclick");
 
 let isopen = false;
@@ -18,7 +18,7 @@ button.addEventListener("click", function() {
     isopen = !isopen;
 })
 
-window.addEventListener("click", function() {
+win.addEventListener("click", function() {
     console.log("clicked");
     if(isopen){
         console.log("opened");
@@ -26,13 +26,13 @@ window.addEventListener("click", function() {
     }
 });
 
-window.addEventListener("contextmenu", function() {
+win.addEventListener("contextmenu", function() {
     rightclick.style.display = "block";
     rightclick.style.left = event.pageX + "px";
     rightclick.style.top = event.pageY + "px";
     event.preventDefault();
 
-    window.addEventListener("click", function() {
+    win.addEventListener("click", function() {
         rightclick.style.display = "none";
     });
 

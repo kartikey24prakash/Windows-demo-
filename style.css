@@ -27,8 +27,6 @@ main{
 }
 
 #taskbar{
-    
-    
     height: 5%;
     width: 100%;
     background-color: #D8DDED;
@@ -38,8 +36,6 @@ main{
     /* padding: 0 10px; */
     padding-left: 45%;
     position: absolute;
-
-    
 }
 #center{
     height: 100%;
@@ -91,14 +87,95 @@ main{
 
 
 #menu{
-    padding-top: 20px;
-    height: 400px;
+    
+    height: 300px;
     width: 500px;
     background-color: #E0E7F9;
     position: absolute;
     bottom: -1;
     left: 35%;
     transition: all 0.1s linear;
+    
+    padding-top:20px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    /* justify-content: center; */
+    /* position:absolute; */
+
+}
+
+.top{
+    height: 30px;
+    width: 90%;
+    position: absolute;
+    /* background-color: #0a66d8; */
+}
+
+.top input{
+    height: 30px;
+    width: 100%;
+}
+
+.top i{
+    position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  
+}
+
+.top input {
+  width: 100%;
+  padding: 0px 00px 0px 20px; /* space for icon */
+}
+
+#menu .mid{
+    /* padding: 0px 30px;i */
+    height: 150px;
+    margin-top:45px ;
+    width: 90%;
+    /* background-color: #777; */
+    
+}
+
+.mid .top2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom2{
+    margin-top:20px ;
+    height: 80%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.bottom2 .icon2{
+    height: 40px;
+    width: 40px;
+    /* background-color: red; */
+}
+
+
+
+
+
+
+#menu .bottom{
+    margin-top: 15px;
+    /* padding: 0px 30px; */
+    height: 50px;
+    width: 100%;
+    position: relative;
+    
+    background-color: #B0C4DE;
 }
 
 
@@ -133,3 +210,5 @@ main{
     background: #e5e5e5;
     margin: 4px 0;
 }
+
+
